@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Laila-Haddad/frontend-mentor/tree/main/Product-preview-card-component
+- Live Site URL: https://laila-haddad.github.io/frontend-mentor/Product-preview-card-component/
 
 ### Built with
 
