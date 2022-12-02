@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Laila-Haddad/frontend-mentor/tree/main/Product-preview-card-component
-- Live Site URL: https://laila-haddad.github.io/frontend-mentor/Product-preview-card-component/
+- Live Site URL: https://laila-haddad.github.io/frontend-mentor/Product-preview-card-component/index.html
 
 ### Built with
 
