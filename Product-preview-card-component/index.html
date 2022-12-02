@@ -4,162 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link href='https://fonts.googleapis.com/css?family=Montserrat:500,700' rel='stylesheet' type='text/css'>
-
   <link href='https://fonts.googleapis.com/css?family=Fraunces:700' rel='stylesheet' type='text/css'>
-
   <title>Frontend Mentor | Product preview card component</title>
 
-  <style>
-    :root {
-      --dark-cyan: hsl(158, 36%, 37%);
-      --cream: hsl(30, 38%, 92%);
-
-      --dark-blue: hsl(212, 21%, 14%);
-      --grayish-blue: hsl(228, 12%, 48%);
-    }
-
-
-    * {
-      box-sizing: border-box;
-      margin: 0px;
-      padding: 0px;
-
-    }
-
-    body {
-      background-color: var(--cream);
-
-    }
-
-    .container {
-      background-color: white;
-      margin: 5rem auto;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      border-radius: 8px;
-      width: 50%;
-      min-width: 450px;
-      min-height: 350px;
-
-    }
-
-    .image {
-      background-image: url(image-product-desktop.jpg);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-
-    }
-
-
-    .image,
-    .details {
-      flex-basis: 50%;
-    }
-
-    .details {
-      padding: 6%;
-    }
-
-    p,
-    .og {
-      font-size: max(1vw, 14px);
-      font-family: 'Montserrat';
-      color: var(--grayish-blue);
-      line-height: max(1.5vw, 20px);
-      font-weight: 500;
-    }
-
-    h2,
-    .sale {
-      font-family: 'Fraunces';
-      display: inline-block;
-      line-height: max(2.5vw, 30px);
-      margin: max(2vw, 12px) 0;
-      color: var(--dark-blue);
-      font-size: max(2.5vw, 30px);
-
-    }
-
-    .sale {
-      color: var(--dark-cyan);
-    }
-
-    .og {
-      text-decoration: line-through;
-      position: relative;
-      top: -0.8vw;
-      left: 1vw;
-    }
-
-    .cart {
-      margin-top: 5px;
-      background-color: var(--dark-cyan);
-      border-radius: 8px;
-      height: max(4vw, 45px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-
-    }
-
-    .cart span {
-      color: white;
-      font-weight: 600;
-      margin-left: 10px;
-    }
-
-    .cart:hover {
-      background-color: hsl(158, 63%, 19%);
-    }
-
-
-
-    @media (max-width: 450px) {
-      .container {
-        flex-direction: column;
-        min-width: 85%;
-
-      }
-      .details{
-        padding:1.7em;
-      }
-
-      .image {
-        min-height: 250px;
-        border-radius: 8px 8px 0 0;
-        background: url(images/image-product-mobile.jpg) center no-repeat 100% ;
-
-
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <div class="container">
+
+  <main class="card">
     <div class="image"></div>
 
     <div class="details">
 
       <p>P E R F U M E</p>
 
-      <h2>Gabrielle Essence Eau De Parfum</h2>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
 
       <p class="desc">
-        A floral, solar and voluptuous<br>
-        interpretation composed by<br>
-        Olivier Polge, Perfumer-Creator<br>
+        A floral, solar and voluptuous
+        interpretation composed by
+        Olivier Polge, Perfumer-Creator
         for the House of CHANEL.
       </p>
 
@@ -170,11 +38,12 @@
       </div>
 
       <p class="cart">
-        <img src="images/icon-cart.svg" width="17vw">
+        <img src="images/icon-cart.svg" width="17vw " alt="add to cart icon">
         <span>Add to Cart</span>
       </p>
 
-    </div>
+
+  </main>
 
 
 </body>

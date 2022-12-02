@@ -1,0 +1,134 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(228, 12%, 48%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 8px;
+    width: 37rem;
+
+}
+
+.image {
+    background-image: url(image-product-desktop.jpg);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.image,
+.details {
+    flex-basis: 50%;
+}
+
+.details {
+    padding: 6%;
+}
+
+p,
+.og {
+    font-size: 14px ;
+    font-family: 'Montserrat';
+    color: var(--grayish-blue);
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h1,
+.sale {
+    font-family: 'Fraunces';
+    font-weight:700;
+    display: inline-block;
+    line-height: 2rem;
+    margin: 17px 0;
+    color: var(--dark-blue);
+    font-size:  30px;
+
+}
+
+.sale {
+    color: var(--dark-cyan);
+}
+
+.og {
+    text-decoration: line-through;
+    position: relative;
+    top:-0.5rem;
+    left: 1rem;
+}
+
+.cart {
+    margin-top: 5px;
+    background-color: var(--dark-cyan);
+    border-radius: 8px;
+    height:  45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.cart span {
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.cart:hover {
+    background-color: hsl(158, 63%, 19%);
+}
+
+
+
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        width: 20rem;
+
+    }
+
+    .details {
+        padding: 1.5rem;
+    }
+
+    .image {
+        min-height: 250px;
+        border-radius: 8px 8px 0 0;
+        background-image: url(images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+  
+
+
+    }
+}
